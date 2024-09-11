@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>P A F</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo">P A F</h1>
+        <nav>
+            <ul>
+                <li><a href="#animaux">Animaux</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="animaux">
+            <h2>Nos Animaux</h2>
+            <div class="container" id="animal-1">
+                <img src="images/thumb-1920-893421.jpg" alt="vache">
+                <h3>Vache</h3>
+                <p>Prix: 1000€</p>
+                <img src="images/elever-chevre-063226.jpg" alt="chevre">
+                <h3>Chevre</h3>
+                <p>Prix: 600€</p>
+                <img src="images/piglets-in-a-field-1366x560.jpg" alt="porc">
+                <h3>Porc</h3>
+                <p>Prix: 500€</p>
+            </div>
+            <!-- Ajoutez plus d'animaux ici -->
+        </section>
+        <section id="reservation">
+            <h2>Reservation</h2>
+            <form id="reservationForm">
+                </select>
+                <form action="/submit-all" method="post">
+                    <!-- Section Reservation -->
+                     <fieldset>
+                        <legend>Reservation</legend>
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="animal">Choisissez un animal</label>
+                        <select name="animal" name="animal">
+                            <option value="Vache">Vache</option>
+                            <option value="Chevre">Chevre</option>
+                            <option value="Porc">Porc</option>
+                            <label for="animal-count">Nombre d'animal à acheter</label>
+                            <input type="number" id="animal-count" name="animal-count" min="1" max="10" value="1">
+                        <label for="date">Date de reservation :</label>
+                        <input type="date" id="date" name="date" required>
+                     </fieldset>
+                     <!-- Section Paiement -->
+                      <fieldset>
+                        <legend>Paiement</legend>
+                        <label for="card-number">Numéro de la carte :</label>
+                        <input type="text" id="card-number" name="card-number" required>
+                        <label for="expiry-date">Date d'expiration :</label>
+                        <input type="text" id="expiry-date" name="expiry-date" required>
+                        <label for="cvv">Cvv :</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                      </fieldset>
+                      <button type="submit">Soumettre</button>
+                </form>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Pour toute question, veuillez nous contacter à <a href="https://wa.me/qr/VBIKIPLXONHNC1" target="-blank">contact sur whatsApp</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 P A F</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
